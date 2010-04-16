@@ -39,4 +39,3 @@ directory with <lib> statements in the solrconfig.xml.  If you make a copy of
 this example server and wish to use the ExtractingRequestHandler (SolrCell),
 you will need to copy the required jars into solr/lib or update the paths to
 the jars in your solrconfig.xml.
-
