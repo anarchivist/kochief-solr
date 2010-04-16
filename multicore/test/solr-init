@@ -13,9 +13,9 @@
 # Short-Description: Starts, stops, and restarts the Solr search engine
 ### END INIT INFO
 
-SOLR_DIR="/Users/mam54/Documents/Code/apache-solr-1.4.0/example"
-JAVA_OPTIONS="-Xmx512m -DSTOP.PORT=8079 -DSTOP.KEY=stopkey -Dsolr.solr.home=multicore -Dfile.encoding=UTF-8 -jar start.jar"
-LOG_FILE="$SOLR_DIR/solr.log"
+SOLR_DIR="../solr"
+JAVA_OPTIONS="-Xmx512m -DSTOP.PORT=8079 -DSTOP.KEY=stopkey -Dsolr.solr.home=multicore -jar start.jar"
+LOG_FILE="$SOLR_DIR/logs/solr.log"
 JAVA="/usr/bin/java"
 
 case $1 in

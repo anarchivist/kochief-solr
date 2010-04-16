@@ -3,4 +3,4 @@ syntax:glob
 solr/data
 multicore/*/data
 work
-logs
+logs/*
