@@ -2,3 +2,5 @@ syntax:glob
 *.pyc
 solr/data
 multicore/*/data
+work
+logs
