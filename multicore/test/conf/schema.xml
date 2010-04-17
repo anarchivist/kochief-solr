@@ -120,6 +120,7 @@
     <field name="pubyearrange" type="string" indexed="true" stored="true" />
     <field name="publisher_exact" type="string" indexed="true" stored="false" />
     <field name="rating" type="string" indexed="true" stored="true" />
+    <field name="repository_name" type="textTighter" indexed="true" stored="true"/>
     <field name="publisher" type="textTighter" indexed="true" stored="true" />
     <field name="series" type="text" indexed="true" stored="true" multiValued="true"/>
     <field name="status" type="string" indexed="true" stored="true" multiValued="true" />
@@ -134,6 +135,7 @@
     <field name="topic" type="textTighter" indexed="true" stored="true" multiValued="true" />
     <field name="upc" type="string" indexed="true" stored="true" />
     <field name="url" type="string" indexed="true" stored="true" multiValued="true" />
+    <field name="url_redirect" type="string" indexed="false" stored="true" />
     <field name="year" type="string" indexed="true" stored="true" />
   </fields>
   <uniqueKey>id</uniqueKey>
@@ -175,6 +177,7 @@
   <copyField source="pubyear" dest="pubyear_facet"/>
   <copyField source="pubyear" dest="year"/>
   <copyField source="pubyear" dest="year_facet"/>
+  <copyField source="repository_name" dest="repository_name_facet"/>
   <copyField source="series" dest="text" />
   <copyField source="subjectentity" dest="subject"/>
   <copyField source="subjectentity" dest="text"/>
